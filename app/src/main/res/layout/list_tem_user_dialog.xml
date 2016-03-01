@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    >
+
+    <TextView
+        android:id="@+id/letter_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout android:id="@+id/letter_container"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_below="@id/letter_sender"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/text_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dialog_item_content_padding"
+                />
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:layout_below="@+id/content_text"
+                android:layout_toRightOf="@+id/content_text"
+                android:layout_toEndOf="@+id/content_text"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/image_container"
+            android:layout_width="@dimen/dialog_photo_width"
+            android:layout_height="@dimen/dialog_photo_height"
+            >
+
+            <ImageView
+                android:id="@+id/content_picture"
+                android:layout_width="@dimen/dialog_photo_width"
+                android:layout_height="@dimen/dialog_photo_height"
+                android:padding="@dimen/dialog_item_content_padding"
+                android:src="@android:drawable/ic_menu_search"
+                android:contentDescription="@string/app_name"
+                />
+
+            <TextView
+                android:id="@+id/image_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:padding="6dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

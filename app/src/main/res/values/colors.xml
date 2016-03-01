@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#393b47</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#6effdb</color>
+    <color name="input_background_msg">#ffffff</color>
+    <color name="output_background_msg">#00ff48</color>
+    <color name="userDialogBackground">#00ffc0</color>
+</resources>

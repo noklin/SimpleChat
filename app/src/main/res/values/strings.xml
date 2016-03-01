@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SimpleChat</string>
+    <string name="action_add_to_friend_list">add to friends</string>
+    <string name="action_remove_from_friend_list">remove from friends</string>
+
+    <string name="action_logout">Logout</string>
+    <string name="search_user_hint">Name</string>
+    <string name="menu_add_friend_title">Create new</string>
+    <string name="action_leave_from_chat">leave chat</string>
+    <string name="action_join_chat">join chat</string>
+    <string name="menu_join_chat_title">join chat</string>
+    <string name="menu_search_in_internet">Search</string>
+    <string name="search_chat_label">Search more chats</string>
+    <string name="search_user_label">Search more friends</string>
+    <string name="user_photo_description">user photo here</string>
+    <string name="chat_title_hint">Name</string>
+    <string name="create_chat_text">Create</string>
+    <string name="save_picture_error_toast">Cannot save picture</string>
+    <string name="connection_problem_toast">Connection problems</string>
+    <string name="authorize_success">Success</string>
+
+    <string name="serverIp">192.168.1.2</string>
+    <integer name="serverPort">56561</integer>
+
+</resources>

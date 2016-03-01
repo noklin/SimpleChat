@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userDialogBackground"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    style="@style/AppTheme.AppBarOverlay"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/send_button_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        >
+
+        <ImageButton
+            android:id="@+id/send_text_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send"
+            android:contentDescription="@string/action_add_to_friend_list"
+            android:onClick="sendTextMessage"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:id="@+id/send_picture_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_camera"
+            android:contentDescription="@string/action_add_to_friend_list"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/send_button_field"
+        android:layout_alignParentTop="true"
+        >
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/message_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/send_button_field"
+        android:layout_toStartOf="@+id/send_button_field"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:inputType="textMultiLine"
+
+        />
+
+
+
+
+
+</RelativeLayout>
